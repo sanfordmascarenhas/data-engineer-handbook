@@ -31,7 +31,7 @@
 --);
 
 -- INSERT INTO players_scd
-WITH with_previous as( -- This aims TO ADD LAG TO see previous season DATA AND GET it TO the NEXT season. LIKE FFILL
+WITH with_previous as( -- This aims TO ADD LAG TO see previous season DATA AND GET it TO the NEXT season. LIKE FFILL mainly FOR scoring AND isactive
 	SELECT player_name,
 	current_season,
 	scoring_class,
